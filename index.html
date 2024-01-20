@@ -9,6 +9,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://kit.fontawesome.com/80fbe7b852.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,21 +18,59 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- custom color -->
+      <!-- font awsome -->
+      
+
     <style>
-      .manrope {
+      .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
-  <body>
-    <header>
-
+  <body class=".font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-7xl font-extrabold">It's good <br>
+                    tea time at The <br>
+                     Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds..</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <div>
+                <img src="./images/banner.png" class="max-w-sm " />
+                <!-- rating badge-->
+                <div class=" -mt-16 flex justify-center items-center gap-2 drop-shadow-lg bg-white p-5 w-60">
+                    <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+                    <div>
+                        <h3 class="text-3xl">5.00</h3>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+          </div>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
   </body>
 </html>
